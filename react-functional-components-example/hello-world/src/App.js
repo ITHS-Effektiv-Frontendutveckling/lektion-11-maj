@@ -2,6 +2,7 @@
 import './App.css';
 
 import TodoItem from './components/TodoItem';
+import AddTodo from './components/AddTodo';
 
 //Funktionella komponenter i React måste starta med en stor bokstav
 //Detta för att React ska veta att det är en komponent
@@ -14,10 +15,22 @@ function App() {
     { task: 'Drick kaffe', done: false, id: 4 }
   ]
 
+  function updateTodo(todoText) {
+    console.log('I updateTodo')
+    const todo = {
+      task: todoText,
+      done: false,
+      id: todos.length + 1
+    }
+
+    todos.push(todo);
+    console.log('Todo array:', todos);
+  }
+
   return (
-    <section>
+    <section className="App-wrapper">
       <h1>Todo</h1>
-      <ul>
+      <ul className="App-list">
         { /** Loopar ut med array-metoden map som returnerar en komponent för varje objekt i arrayen
          * och skickar med varje objekt som props till TodoItem
          */}
@@ -30,6 +43,8 @@ function App() {
         <TodoItem task='Brygg kaffe' done={ isDone } />
         <TodoItem task='Drick kaffe' done={ isDone } /> */}
       </ul>
+
+      <AddTodo update={ updateTodo } />
     </section>
   );
 }
