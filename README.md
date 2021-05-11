@@ -17,3 +17,5 @@ https://scrimba.com/learn/learnreact
 ## Inspelningar
 
 Förmiddag: https://ithogskolan.sharepoint.com/sites/Frontendutvecklare2020/Delade%20dokument/Effektiv%20frontendutveckling/Recordings/M%C3%B6te-20210511_090934-M%C3%B6tesinspelning.mp4?web=1
+
+Eftermiddag: https://ithogskolan.sharepoint.com/sites/Frontendutvecklare2020/Delade%20dokument/Effektiv%20frontendutveckling/Recordings/Lektion%20-%20Tisdagar-20210511_140918-M%C3%B6tesinspelning.mp4?web=1
